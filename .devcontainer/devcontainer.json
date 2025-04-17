@@ -1,0 +1,18 @@
+{
+  "name": "Ubuntu 22.04 + Node.js",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"  // Gunakan versi LTS terbaru Node.js
+    }
+  },
+  "forwardPorts": [3000],  // Port untuk aplikasi Node.js
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
